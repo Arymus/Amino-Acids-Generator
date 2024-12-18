@@ -14,6 +14,7 @@ public class Main {
         System.out.println("Enter 3 letters: either a T, A, G, or C.");
 
         String dna = scanner.nextLine(); // Assigns the user's input to a variable
+        scanner.close(); // Close the scanner to prevent memory leaks
         String[] dnaArray = dna.split(""); // Split the user input at each character and makes an array
 
         String regex = "[tgac]"; // Defines the letters t, g, a, and c
